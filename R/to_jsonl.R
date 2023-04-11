@@ -20,4 +20,6 @@ to_jsonl <- function(data, file) {
   }
 
   write(json_string, file)
+
+  return(file)
 }

@@ -4,7 +4,9 @@ test_that("Conversion works for data.frame", {
 
   test_path <- to_jsonl(test_df, "test_file.jsonl")
 
-  jsonl_fl <- readLines("test_file.jsonl")
+  jsonl_fl <- readLines(test_path)
 
   expect_identical(jsonl_fl, test_data)
+
+  file.remove(test_path)
 })
