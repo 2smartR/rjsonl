@@ -9,7 +9,7 @@ to_jsonl(data, file)
 \arguments{
 \item{data}{Data that can be converted into json file. See ?jsonlite::toJSON()}
 
-\item{file}{A file path to save file to}
+\item{file}{A file path to save file to. For example: "new_json.jsonl"}
 }
 \value{
 File path string of new jsonl file
